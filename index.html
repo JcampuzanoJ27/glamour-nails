@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Salón de uñas Glamour Nails - diseños personalizados, spa de manos y más." />
+    <meta name="author" content="Glamour Nails" />
+    <meta property="og:title" content="Glamour Nails" />
+    <meta property="og:description" content="Uñas espectaculares con estilo único." />
+    <title>Glamour Nails</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="icon" href="imagenes/logo.png" type="image/png">
+
+</head>
+
+<body>
+    <header class="header" role="banner">
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="imagenes/logo.png" alt="Glamour Nails Logo" class="logo-img">
+            </a>
+            <nav aria-label="Navegación principal">
+                <ul class="nav-links">
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#galeria">Galería</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>¡Resalta tu belleza con uñas espectaculares!</h2>
+                <p>Diseños únicos, personalizados y con el mejor cuidado.</p>
+                <a href="#contacto" class="btn">Reserva tu cita</a>
+            </div>
+        </section>
+
+        <section id="servicios" class="servicios" aria-labelledby="titulo-servicios">
+            <h2 id="titulo-servicios">Nuestros Servicios</h2>
+            <div class="servicios-grid">
+                <article class="servicio-card">
+                    <h3>Manicure Tradicional</h3>
+                    <p>Cuidado y esmaltado profesional para tus manos.</p>
+                </article>
+                <article class="servicio-card">
+                    <h3>Uñas Acrílicas</h3>
+                    <p>Diseños personalizados, desde lo clásico hasta lo más creativo.</p>
+                </article>
+                <article class="servicio-card">
+                    <h3>Manicure Spa</h3>
+                    <p>Relájate con exfoliación, masaje y tratamiento hidratante.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="galeria" class="galeria" aria-labelledby="titulo-galeria">
+            <h2 id="titulo-galeria">Galería</h2>
+            <div class="galeria-grid">
+               <a href="#" class="imgu">
+                <img src="imagenes/unas1 (1).jpg" alt="Glamour Nails Logo" class="logo-img">
+               </a>
+               <a href="#" class="imgu">
+                <img src="imagenes/unas1 (2).jpg" alt="Glamour Nails Logo" class="logo-img">
+            </a>
+            <a href="#" class="imgu">
+                <img src="imagenes/unas1 (3).jpg" alt="Glamour Nails Logo" class="logo-img">
+            </a>
+
+            </div>
+        </section>
+
+        <section id="contacto" class="contacto" aria-labelledby="titulo-contacto">
+            <h2 id="titulo-contacto">Contacto</h2>
+            <p>Reserva tu cita llenando el formulario o envíanós un mensaje:</p>
+            <form class="contact-form" aria-label="Formulario de contacto">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" required />
+
+                <label for="email">Correo Electrónico</label>
+                <input type="email" id="email" name="email" required />
+
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+                <button type="submit" class="btn">Enviar</button>
+            </form>
+            <p>O contáctanos directamente por <a href="https://wa.me/573194346736" class="btn">WhatsApp</a></p>
+        </section>
+        <script>
+  const form = document.querySelector('.contact-form');
+
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    alert('✅ ¡Tu mensaje fue enviado correctamente!');
+    form.reset();
+  });
+</script>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+    <p>&copy; 2025 Glamour Nails. Todos los derechos reservados.</p>
+    <a href="https://instagram.com/glamour_nails02" target="_blank" aria-label="Instagram">
+        <img src="imagenes/instagram.png" alt="Instagram" class="instagram-icon">
+    </a>
+</footer>
+
+</body>
+
+</html>
